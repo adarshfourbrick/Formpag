@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
-function App() {
+
+
+function UncontrolledExample() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Tabs
+      defaultActiveKey="profile"
+      id="uncontrolled-tab-example"
+      className="mb-3"
+    >
+      <Tab eventKey="home" title="Home"><h1>bhbzxcvgsvgbn</h1>
+      </Tab>
+      <Tab eventKey="profile" title="Profile">vcbnm
+      </Tab>
+      <Tab eventKey="contact" title="Contact">nmbnmnbnm
+      </Tab>
+    </Tabs>
   );
 }
 
-export default App;
+export default UncontrolledExample;

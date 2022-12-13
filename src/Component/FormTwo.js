@@ -1,0 +1,500 @@
+import React from 'react'
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+
+import Form from './Form';
+import History from './History';
+
+
+
+
+const FormTwo = () => {
+   
+  return (
+<Tabs 
+      defaultActiveKey="home"
+      id="uncontrolled-tab-example"
+      className="m-5"
+      
+    >
+      <Tab eventKey="home" title="Current" >
+      <form className='m-5'>
+    <button type="button" class="btn btn-secondary btn-sm mt-3" ><i class="fa fa-arrow-circle-left"></i> Back To Grid</button>
+    <button type="button" class="btn btn-primary btn-sm mt-3" style={{marginLeft:"10px"}}><i class="fa fa-arrow-circle-right"></i> Execute Action</button>
+    <button type="button" class="btn btn-primary btn-sm mt-3 float-right"><i class="fa fa-save"></i> Save</button>
+    <button type="button" class="btn btn-secondary btn-sm mt-3" style={{marginLeft:"10px"}}><i class="fa fa-arrow-circle-down"></i>Notify</button>
+
+    
+    
+<fieldset class="border p-4 border-primary mt-4">
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Site Technologies</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-3">
+     
+      </div>
+     
+     
+     
+      
+     
+    </div>
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>In-Progress</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span> Site-ID</label>
+        <input type="email" className="form-control" id="inputEmail4" placeholder="" />
+
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputPassword4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span> Project</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> Sub-Project</label>
+        <input type="email" className="form-control" id="inputEmail4" placeholder="" />
+      </div>
+      <div className="form-group col-md-3">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> <span style={{color:"red"}}>*</span> Development Or Operations Work</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>      </div>
+
+
+      <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> RIOT/LEMMING</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>      </div>
+      <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> Existing Tech Checked(GC)</label>
+        <div>
+        <input style={{marginLeft:"10px"}} type="checkbox" class="formm-control"  />
+
+        </div>
+
+          </div>
+          <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> Existing Tech KPI Notes</label>
+       <div>
+       <button type="submit" class="  btn btn-secondary" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><i class="fa fa-pencil"></i> Add Notes</button>
+       <div style={{border:"1px solid black",marginTop:"20px"}}>
+       <button type="submit" class="  btn btn-primary" style={{width:"50px",marginTop:"10px",marginLeft:"10px"}}><i class="fa fa-pencil"></i> </button>
+       <button type="submit" class="  btn btn-danger" style={{width:"50px",marginLeft:"20px",marginTop:"10px"}}><i class="fa fa-trash"></i></button>
+       <div style={{marginLeft:"28px"}}>
+        <h6 style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Undefined</h6>
+       </div>
+       <div>
+       <i  class="fa fa-clock-o m-2"> null by Administrator TTS Wireless</i>
+       </div>
+
+
+       </div>
+       
+       
+
+       </div>
+
+      
+
+          </div>
+          <div className="form-group col-md-5">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> RIOT Notes</label>
+        <div>
+        <button type="submit" class="  btn btn-secondary" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><i class="fa fa-pencil"></i> Add Notes</button>
+
+        </div>
+      </div>
+      <div className="form-group col-md-7">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> RIOT Snapshot</label>
+        
+        <input type="file" className="form-control" id="inputEmail4" placeholder="" />
+<div>
+<button type="submit" class="  btn btn-light" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}>Total 0 File</button>
+<button type="submit" class="  btn btn-primary float-right" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-download"></i> Download All</button>
+<button type="submit" class="  btn btn-secondary float-right mr-3" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-trash"></i> Delete All</button>
+
+</div>
+       
+      </div>
+      <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>E911/CBN Validate</label>
+       
+        <select id="inputState" class="form-control">
+        <option selected>(Select)</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>    
+      
+      </div>
+      
+      <div className="form-group col-md-12 " >
+       
+     <hr style={{border:"1px solid black"}} ></hr>
+      </div>
+      <div className="form-group col-md-5">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> CBN Notes</label>
+        <div>
+        <button type="submit" class="  btn btn-secondary" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><i class="fa fa-pencil"></i> Add Notes</button>
+
+        </div>
+      </div>
+      <div className="form-group col-md-7">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> CBN Snapshot</label>
+        
+        <input type="file" className="form-control" id="inputEmail4" placeholder="" />
+<div>
+<button type="submit" class="  btn btn-light" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}>Total 0 File</button>
+<button type="submit" class="  btn btn-primary float-right" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-download"></i> Download All</button>
+<button type="submit" class="  btn btn-secondary float-right mr-3" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-trash"></i> Delete All</button>
+
+</div>
+       
+      </div>
+      <div className="form-group col-md-5">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> Notes General</label>
+        <div>
+        <button type="submit" class="  btn btn-secondary" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><i class="fa fa-pencil"></i> Add Notes</button>
+
+        </div>
+      </div>
+      <div className="form-group col-md-7">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Upload File</label>
+        
+        <input type="file" className="form-control" id="inputEmail4" placeholder="" />
+<div>
+<button type="submit" class="  btn btn-light" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}>Total 0 File</button>
+<button type="submit" class="  btn btn-primary float-right" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-download"></i> Download All</button>
+<button type="submit" class="  btn btn-secondary float-right mr-3" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-trash"></i> Delete All</button>
+
+</div>
+       
+      </div>
+      <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SSP_Report_Pre_48_Hours_Needed</label>
+        <div>
+        <input style={{marginLeft:"10px"}} type="checkbox" class="formm-control"  />
+
+        </div>
+
+          </div>
+          <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SSP_Pre_48_Hours_Report Completed</label>
+        <div>
+        <input style={{marginLeft:"10px"}} type="checkbox" class="formm-control"  />
+
+        </div>
+
+          </div>
+     
+    </div>
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",fontFamily:"Georgia, 'Times New Roman', Times, serif",borderRadius:"15px"}}>External Alarms</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-6">
+        <label htmlFor="inputEmail4" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span>External Alarm</label>
+        {/* <input type="Text" className="form-control" id="inputEmail4" placeholder="" /> */}
+        <p>Create dattable </p>
+
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Notes For Ext Alarm</label>
+        <div>
+        <button type="submit" class="  btn btn-secondary" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><i class="fa fa-pencil"></i> Add Notes</button>
+
+        </div>
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputPassword4" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span>External Alarm Simulated</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>       </div>
+    
+      <div className="form-group col-md-5">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Upload File</label>
+        
+        <input type="file" className="form-control" id="inputEmail4" placeholder="" />
+<div>
+<button type="submit" class="  btn btn-light" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}>Total 0 File</button>
+<button type="submit" class="  btn btn-primary float-right" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-download"></i> Download All</button>
+<button type="submit" class="  btn btn-secondary float-right mr-3" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif" ,marginTop:"10px"}}><i class="fa fa-trash"></i> Delete All</button>
+
+</div>
+       
+      
+   </div>
+   </div>
+    
+    </fieldset>
+
+    <fieldset class="border p-4 border-danger mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" brown",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>In-Progress Check-Ins</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-10">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Contractor Check Ins</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+        <p> datatable create</p>
+
+      </div>
+     
+    
+     
+    
+     
+    </div>
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Escalation Issues</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-7">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Escalation List</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+        <p>datatable cfreate</p>
+
+      </div>
+     
+    
+     
+    
+     
+    </div>
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Issues List (NEW)</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-7">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Issues List</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+        <p>datatable cfreate</p>
+
+      </div>
+     
+    
+     
+    
+     
+    </div>
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>PAG Managers</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Project Code</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Sub-Vender</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Stabilization Required</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>CR/TT</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>POR Data</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+<div>
+    <a style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}} href=''>Show POR Widget</a>
+</div>
+
+
+      </div>
+     
+    
+  
+     
+  
+     
+    
+     
+    </div>
+    
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Drive-SSV Report</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-7">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SSV Drives</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+        <p>datatable cfreate</p>
+
+      </div>
+     
+    
+     
+    
+     
+    </div>
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Issues List (NEW)</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-7">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Issues List</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+        <p>datatable cfreate</p>
+
+      </div>
+     
+    
+     
+    
+     
+    </div>
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>SSV TMO Approval</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-4">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SSV Submitted Date</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+      <div className="form-group col-md-4">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SSV  Approval Date</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+      <div className="form-group col-md-4">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SSV  Report TMO Approval</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SSV Comments</label>
+        {/* <input type="Text" className="form-control"  placeholder="" /> */}
+
+      </div>
+     
+     
+    
+  
+     
+  
+     
+    
+     
+    </div>
+    
+    
+    </fieldset>
+    <fieldset class="border p-4 border-primary mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>SST- Post Launch</legend>
+
+    <div className="form-row">
+    <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SST-Immediate Post Integration completed</label>
+        <div>
+        <input style={{marginLeft:"10px"}} type="checkbox" class="formm-control"  />
+
+        </div>
+
+          </div>
+          <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SST - Post 7 Days-KPIs</label>
+        <div>
+        <input style={{marginLeft:"10px"}} type="checkbox" class="formm-control"  />
+
+        </div>
+
+          </div>
+          <div className="form-group col-md-4">
+        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>SST -Date</label>
+       <div>        <input style={{marginLeft:"10px"}} type="datetime-local" class="formm-control"  />
+</div>
+        
+
+       
+
+          </div>
+     
+    
+  
+     
+     
+  
+     
+    
+     
+    </div>
+    
+    </fieldset>
+    <button type="button" class="btn btn-secondary btn-sm mt-3" ><i class="fa fa-arrow-circle-left"></i> Back To Grid</button>
+<button type="button" class="btn btn-primary btn-sm mt-3" style={{marginLeft:"10px"}}><i class="fa fa-arrow-circle-right"></i> Execute Action</button>
+<button type="button" class="btn btn-primary btn-sm mt-3 float-right"><i class="fa fa-save"></i> Save</button>
+<button type="button" class="btn btn-secondary btn-sm mt-3" style={{marginLeft:"10px"}}><i class="fa fa-arrow-circle-down"></i>Notify</button>
+
+
+
+  </form>
+    
+  
+      </Tab>
+    
+      <Tab eventKey="profile" title="History"><History/>
+      </Tab>
+      <Tab eventKey="contact" title="Files">
+      </Tab>
+      <Tab eventKey="Notes" title="Notes">
+      </Tab>
+     
+    
+         </Tabs>
+  
+
+  )
+}
+
+export default FormTwo
