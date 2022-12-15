@@ -4,33 +4,75 @@ import Tabs from 'react-bootstrap/Tabs';
 
 import Form from './Form';
 import History from './History';
+import DataTable from 'react-data-table-component';
+import DataTableExtensions from 'react-data-table-component-extensions';
+import 'react-data-table-component-extensions/dist/index.css';
+import { columns, data } from './Data.js';
+
+
 
 
 
 
 const FormTwo = () => {
+  const tableData = {
+    columns,
+    data,
+  };
+ 
    
   return (
-<Tabs 
-      defaultActiveKey="home"
-      id="uncontrolled-tab-example"
-      className="m-5"
       
-    >
-      <Tab eventKey="home" title="Current" >
+    
       <form className='m-5'>
+
+   
+
+
+
     <button type="button" class="btn btn-secondary btn-sm mt-3" ><i class="fa fa-arrow-circle-left"></i> Back To Grid</button>
     <button type="button" class="btn btn-primary btn-sm mt-3" style={{marginLeft:"10px"}}><i class="fa fa-arrow-circle-right"></i> Execute Action</button>
     <button type="button" class="btn btn-primary btn-sm mt-3 float-right"><i class="fa fa-save"></i> Save</button>
     <button type="button" class="btn btn-secondary btn-sm mt-3" style={{marginLeft:"10px"}}><i class="fa fa-arrow-circle-down"></i>Notify</button>
 
     
-    
+   
 <fieldset class="border p-4 border-primary mt-4">
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Site Technologies</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#344e41",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Site Technologies</legend>
 
     <div className="form-row">
-      <div className="form-group col-md-3">
+      <div className="form-group col-md-6" style={{border:"1px solid gray"}}>
+      <label htmlFor=""  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> --Existing Technology</label>
+
+      <DataTableExtensions
+      {...tableData}
+    >
+      <DataTable
+        noHeader
+        defaultSortField="id"
+        defaultSortAsc={false}
+        pagination
+        highlightOnHover
+        fixedHeaderScrollHeight=''
+      />
+    </DataTableExtensions>
+     
+      </div>
+      <div className="form-group col-md-5  ml-3" style={{border:"1px solid gray"}}>
+      <label htmlFor=""  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> --New Technology</label>
+
+      <DataTableExtensions
+      {...tableData}
+    >
+      <DataTable
+        noHeader
+        defaultSortField="id"
+        defaultSortAsc={false}
+        pagination
+        highlightOnHover
+        fixedHeaderScrollHeight=''
+      />
+    </DataTableExtensions>
      
       </div>
      
@@ -42,38 +84,26 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>In-Progress</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" #f6bd60",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>In-Progress</legend>
 
     <div className="form-row">
-      <div className="form-group col-md-3">
-        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span> Site-ID</label>
-        <input type="email" className="form-control" id="inputEmail4" placeholder="" />
+    <div className="form-group col-md-12  ml-3" >
+      <label htmlFor=""  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Contractors</label>
 
+      <DataTableExtensions
+      {...tableData}
+    >
+      <DataTable
+        noHeader
+        defaultSortField="id"
+        defaultSortAsc={false}
+        pagination
+        highlightOnHover
+        fixedHeaderScrollHeight=''
+      />
+    </DataTableExtensions>
+     
       </div>
-      <div className="form-group col-md-3">
-        <label htmlFor="inputPassword4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span> Project</label>
-        <select id="inputState" class="form-control">
-        <option selected>(Select)........</option>
-        <option>A</option>
-        <option>B</option>
-        <option>C</option>
-        <option>D</option>
-        <option>E</option>
-      </select>      </div>
-      <div className="form-group col-md-3">
-        <label htmlFor="inputEmail4" style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> Sub-Project</label>
-        <input type="email" className="form-control" id="inputEmail4" placeholder="" />
-      </div>
-      <div className="form-group col-md-3">
-        <label for="inputState"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}> <span style={{color:"red"}}>*</span> Development Or Operations Work</label>
-        <select id="inputState" class="form-control">
-        <option selected>(Select)........</option>
-        <option>A</option>
-        <option>B</option>
-        <option>C</option>
-        <option>D</option>
-        <option>E</option>
-      </select>      </div>
 
 
       <div className="form-group col-md-4">
@@ -214,7 +244,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",fontFamily:"Georgia, 'Times New Roman', Times, serif",borderRadius:"15px"}}>External Alarms</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" #ff0054",fontSize:"10px",color:"#fff",fontFamily:"Georgia, 'Times New Roman', Times, serif",borderRadius:"15px"}}>External Alarms</legend>
 
     <div className="form-row">
       <div className="form-group col-md-6">
@@ -259,7 +289,7 @@ const FormTwo = () => {
     </fieldset>
 
     <fieldset class="border p-4 border-danger mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" brown",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>In-Progress Check-Ins</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#6a040f",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>In-Progress Check-Ins</legend>
 
     <div className="form-row">
       <div className="form-group col-md-10">
@@ -277,7 +307,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Escalation Issues</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#118ab2",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Escalation Issues</legend>
 
     <div className="form-row">
       <div className="form-group col-md-7">
@@ -295,7 +325,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Issues List (NEW)</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#003566",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Issues List (NEW)</legend>
 
     <div className="form-row">
       <div className="form-group col-md-7">
@@ -313,7 +343,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>PAG Managers</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#240046",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>PAG Managers</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -358,7 +388,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Drive-SSV Report</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" #003e1f",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Drive-SSV Report</legend>
 
     <div className="form-row">
       <div className="form-group col-md-7">
@@ -376,7 +406,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Issues List (NEW)</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#8c2f39",fontSize:"10px",color:"#fff",borderRadius:"15px"}}> Issues List (NEW)</legend>
 
     <div className="form-row">
       <div className="form-group col-md-7">
@@ -394,7 +424,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>SSV TMO Approval</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#461220",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>SSV TMO Approval</legend>
 
     <div className="form-row">
       <div className="form-group col-md-4">
@@ -431,7 +461,7 @@ const FormTwo = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>SST- Post Launch</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" #eb5e28",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>SST- Post Launch</legend>
 
     <div className="form-row">
     <div className="form-group col-md-4">
@@ -481,18 +511,7 @@ const FormTwo = () => {
   </form>
     
   
-      </Tab>
-    
-      <Tab eventKey="profile" title="History"><History/>
-      </Tab>
-      <Tab eventKey="contact" title="Files">
-      </Tab>
-      <Tab eventKey="Notes" title="Notes">
-      </Tab>
-     
-    
-         </Tabs>
-  
+      
 
   )
 }

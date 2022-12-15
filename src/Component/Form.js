@@ -1,7 +1,6 @@
 import React  from 'react';
 import Button from 'react-bootstrap/Button';
 import FormTwo from './FormTwo';
-import Fieldcheckin from './Fieldcheckin'
 
 
 const Form = () => {
@@ -15,14 +14,14 @@ const Form = () => {
     <button type="button" class="btn btn-primary btn-sm mt-3 float-right"><i class="fa fa-save"></i> Save</button>
     
     
-<fieldset class="border p-4 border-primary mt-4">
-   <legend  class="float-none w-auto p-2"  style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Assignment</legend>
+<fieldset class="border p-4 border-danger mt-4">
+   <legend  class="float-none w-auto p-2"  style={{backgroundColor:"#bb3e03",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Assignment</legend>
  
 
     <div className="form-row">
       <div className="form-group col-md-3">
         <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span>Market</label>
-        <select id="inputState" class="form-control">
+        <select id="inputState" class="form-control" >
         <option selected>(Select)........</option>
         <option>A</option>
         <option>B</option>
@@ -79,7 +78,7 @@ const Form = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Project</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#023047",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Project</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -116,8 +115,8 @@ const Form = () => {
     </div>
     
     </fieldset>
-    <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",fontFamily:"Georgia, 'Times New Roman', Times, serif",borderRadius:"15px"}}>Preliminary</legend>
+    <fieldset class="border p-4 border-danger mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#e63946",fontSize:"10px",color:"#fff",fontFamily:"Georgia, 'Times New Roman', Times, serif",borderRadius:"15px"}}>Preliminary</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -208,7 +207,7 @@ const Form = () => {
     
     </fieldset>
 
-    <fieldset class="border p-4 border-danger mt-4"   >
+    <fieldset class="border p-4 border-primary mt-4"   >
    <legend  class="float-none w-auto p-2" style={{backgroundColor:" brown",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Escalation List</legend>
 
     <div className="form-row">
@@ -225,8 +224,8 @@ const Form = () => {
     </div>
     
     </fieldset>
-    <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
+    <fieldset class="border p-4 border-warning mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#f77f00",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
 
     <div className="form-row">
       <div className="form-group col-md-7">
@@ -248,8 +247,8 @@ const Form = () => {
     </div>
     
     </fieldset>
-    <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
+    <fieldset class="border p-4 border-danger mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#ef233c",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -288,8 +287,8 @@ const Form = () => {
     </div>
     
     </fieldset>
-    <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>FOPS Tech</legend>
+    <fieldset class="border p-4 border-success mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#b5e48c",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>FOPS Tech</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -319,8 +318,8 @@ const Form = () => {
     </div>
     
     </fieldset>
-    <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Is Market In MOP</legend>
+    <fieldset class="border p-4 border-info mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#0077b6",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Is Market In MOP</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">

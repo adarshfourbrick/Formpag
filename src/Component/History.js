@@ -71,7 +71,7 @@ const History = () => {
     
     </fieldset> */}
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Project</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#7f5539",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Project</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -115,7 +115,7 @@ const History = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",fontFamily:"Georgia, 'Times New Roman', Times, serif",borderRadius:"15px"}}>Preliminary</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#bc3908",fontSize:"10px",color:"#fff",fontFamily:"Georgia, 'Times New Roman', Times, serif",borderRadius:"15px"}}>Preliminary</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -248,7 +248,7 @@ const History = () => {
     
     </fieldset> */}
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#660708",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
 
     <div className="form-row">
       <div className="form-group col-md-7">
@@ -271,7 +271,7 @@ const History = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#bb010b",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Supported Activities</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -311,7 +311,7 @@ const History = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>FOPS Tech</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#f86624",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>FOPS Tech</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -349,7 +349,7 @@ const History = () => {
     
     </fieldset>
     <fieldset class="border p-4 border-primary mt-4"   >
-   <legend  class="float-none w-auto p-2" style={{backgroundColor:" blue",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Is Market In MOP</legend>
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:"#8d0801",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Is Market In MOP</legend>
 
     <div className="form-row">
       <div className="form-group col-md-3">
@@ -373,6 +373,101 @@ const History = () => {
 <button type="button" class="btn btn-light btn-sm mt-5" style={{marginLeft:"10px"}} ><i class="fa fa-close"></i> Cancel</button>
 
    </div>
+    
+    </fieldset>
+
+    <fieldset class="border p-4 border-primary mt-4">
+   <legend  class="float-none w-auto p-2"  style={{backgroundColor:"#bb3e03",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Assignment</legend>
+ 
+
+    <div className="form-row">
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span>Market</label>
+        <select id="inputState" class="form-control" >
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>
+      </div>
+      <div className="form-group col-md-3"> 
+        <label htmlFor="inputPassword4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span>Group</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}><span style={{color:"red"}}>*</span>Owener</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Priority</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Email</label>
+        <input type="email" className="form-control" id="inputEmail4" placeholder="" />
+      </div>
+      <div className="form-group col-md-3">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Follower</label>
+        <select id="inputState" class="form-control">
+        <option selected>(Select)........</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+      </select>      </div>
+    </div>
+
+    <div >
+   <button type="button" class="btn btn-light btn-sm mt-5" style={{marginLeft:"10px"}} ><i class="fa fa-save"></i> Save</button>
+
+<button type="button" class="btn btn-light btn-sm mt-5" style={{marginLeft:"10px"}} ><i class="fa fa-close"></i> Cancel</button>
+
+   </div>
+    
+    </fieldset>
+    
+    <fieldset class="border p-4 border-danger mt-4"   >
+   <legend  class="float-none w-auto p-2" style={{backgroundColor:" brown",fontSize:"10px",color:"#fff",borderRadius:"15px"}}>Escalation List</legend>
+
+    <div className="form-row">
+      <div className="form-group col-md-12">
+        <label htmlFor="inputEmail4"  style={{fontFamily:"Georgia, 'Times New Roman', Times, serif"}}>Escalation info all levels</label>
+        <input type="Text" className="form-control"  placeholder="" />
+
+      </div>
+     
+    
+      <div >
+      
+   <button type="button" class="btn btn-light btn-sm mt-5" style={{marginLeft:"10px"}} ><i class="fa fa-save"></i> Save</button>
+
+<button type="button" class="btn btn-light btn-sm mt-5" style={{marginLeft:"10px"}} ><i class="fa fa-close"></i> Cancel</button>
+
+   </div>
+     
+    </div>
+  
     
     </fieldset>
     {/* <button type="button" class="btn btn-primary btn-sm mt-3" ><i class="fa fa-arrow-circle-left"></i> Back To Grid</button>

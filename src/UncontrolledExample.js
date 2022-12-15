@@ -1,6 +1,5 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Fieldcheckin from './Component/Fieldcheckin';
 
 import Form from './Component/Form';
 import FormTwo from './Component/FormTwo';
@@ -15,7 +14,10 @@ function UncontrolledExample() {
       
     >
       <Tab eventKey="home" title="Current" ><Form/>
-      <FormTwo/><Fieldcheckin/>
+      <div style={{border:"4px solid #8d99ae" ,margin:"20px"}}>
+      <FormTwo/>
+
+      </div>
   
       </Tab>
     
